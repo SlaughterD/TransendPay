@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: transendpay-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: DATABASE_URL
+        value: your_postgres_connection_url
+      - key: CLOUDINARY_URL
+        value: your_cloudinary_url
+      - key: INFURA_URL
+        value: your_infura_project_url
+      - key: SECRET_KEY
+        value: your_super_secret_jwt_key
