@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+cloudinary
+web3
+python-dotenv
+pydantic[email]
+python-jose[cryptography]
+bcrypt

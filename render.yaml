@@ -13,4 +13,4 @@ services:
       - key: INFURA_URL
         value: your_infura_project_url
       - key: SECRET_KEY
-        value: your_super_secret_jwt_key
+        value: your_jwt_secret
